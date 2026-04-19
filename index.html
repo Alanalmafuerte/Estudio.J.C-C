@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Estudio Jurídico Integral C&amp;C | Asesoramiento legal</title>
+<meta name="description" content="Estudio Jurídico Integral C&C. Asesoramiento legal con experiencia, compromiso y una mirada actual del derecho. Derecho previsional, civil, comercial, familiar y laboral." />
+<link rel="canonical" href="/" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --background:36 30% 97%;
+  --foreground:24 14% 18%;
+  --muted:34 20% 92%;
+  --muted-foreground:25 10% 40%;
+  --card:0 0% 100%;
+  --border:32 18% 86%;
+  --primary:24 14% 18%;
+  --primary-foreground:36 30% 97%;
+  --gold:36 45% 52%;
+  --shadow-soft:0 4px 14px -6px hsl(24 14% 18% / .08);
+  --shadow-elegant:0 18px 40px -18px hsl(24 14% 18% / .25);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Inter',sans-serif;
+  font-size:16px;
+  line-height:1.6;
+  color:hsl(var(--foreground));
+  background:hsl(var(--background));
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.serif{font-family:'Cormorant Garamond',serif;font-weight:500;letter-spacing:.01em}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.container{width:100%;max-width:1180px;margin:0 auto;padding:0 1.25rem}
+.gold{color:hsl(var(--gold))}
+.eyebrow{
+  text-transform:uppercase;letter-spacing:.28em;font-size:.72rem;
+  color:hsl(var(--gold));margin-bottom:1rem;
+}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:.85rem 1.6rem;border-radius:999px;font-weight:500;font-size:.95rem;
+  transition:all .25s ease;cursor:pointer;border:1px solid transparent;
+}
+.btn-primary{background:hsl(var(--primary));color:hsl(var(--primary-foreground))}
+.btn-primary:hover{background:hsl(24 14% 25%)}
+.btn-outline{background:transparent;border-color:hsl(var(--foreground)/.25);color:hsl(var(--foreground))}
+.btn-outline:hover{background:hsl(var(--foreground)/.05)}
+.btn-wa{background:#25D366;color:#fff}
+.btn-wa:hover{background:#1ebe57}
+.btn-sm{padding:.55rem 1.1rem;font-size:.85rem}
+
+/* Header */
+header{
+  position:fixed;top:0;left:0;right:0;z-index:40;
+  transition:all .3s ease;background:transparent;
+}
+header.scrolled{
+  background:hsl(var(--background)/.85);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid hsl(var(--border));
+}
+.nav{display:flex;align-items:center;justify-content:space-between;height:4.5rem}
+.brand{font-family:'Cormorant Garamond',serif;font-size:1.25rem}
+.nav-links{display:none;align-items:center;gap:2rem}
+.nav-links a{font-size:.9rem;color:hsl(var(--muted-foreground));transition:color .2s}
+.nav-links a:hover{color:hsl(var(--foreground))}
+.menu-btn{background:none;border:none;cursor:pointer;padding:.5rem;display:flex;flex-direction:column;gap:5px}
+.menu-btn span{width:22px;height:1px;background:hsl(var(--foreground));display:block}
+.mobile-menu{display:none;border-top:1px solid hsl(var(--border));background:hsl(var(--background))}
+.mobile-menu.open{display:block}
+.mobile-menu .container{padding-top:1rem;padding-bottom:1rem;display:flex;flex-direction:column;gap:.5rem}
+.mobile-menu a{padding:.6rem 0;font-size:.95rem}
+
+@media(min-width:768px){
+  .nav{height:5rem}
+  .brand{font-size:1.4rem}
+  .nav-links{display:flex}
+  .menu-btn{display:none}
+}
+
+/* Hero */
+.hero{
+  position:relative;padding:8rem 0 3rem;text-align:center;overflow:hidden;
+  background:
+    radial-gradient(ellipse at top, hsl(36 35% 90%) 0%, transparent 60%),
+    linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+}
+.hero::after{
+  content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,hsl(var(--background)) 100%);
+  pointer-events:none;
+}
+.hero .container{position:relative;z-index:1;max-width:780px}
+.hero h1{
+  font-size:clamp(2.4rem,5.5vw,3.8rem);line-height:1.05;color:hsl(var(--foreground));
+  margin:.5rem 0 1.25rem;
+}
+.hero p.lead{
+  font-size:1.05rem;color:hsl(var(--muted-foreground));max-width:600px;margin:0 auto 2.25rem;
+}
+.hero-actions{display:flex;flex-direction:column;gap:.75rem;justify-content:center;align-items:center}
+@media(min-width:640px){
+  .hero{padding:11rem 0 5rem}
+  .hero p.lead{font-size:1.15rem}
+  .hero-actions{flex-direction:row}
+}
+
+/* Sections */
+section{padding:3.5rem 0}
+@media(min-width:768px){section{padding:5rem 0}}
+.section-head{text-align:center;margin-bottom:3rem}
+.section-head h2{font-size:clamp(1.85rem,3.5vw,2.5rem);color:hsl(var(--foreground))}
+.gold-line{position:relative;display:inline-block;padding-bottom:.6rem}
+.gold-line::after{
+  content:"";position:absolute;left:0;bottom:0;width:42px;height:1px;background:hsl(var(--gold));
+}
+.gold-line-center::after{left:50%;transform:translateX(-50%)}
+
+/* Nosotros */
+#nosotros .container{max-width:780px}
+#nosotros .body p{margin-bottom:1.1rem;color:hsl(var(--muted-foreground));font-size:.98rem}
+
+/* Servicios */
+#servicios{background:linear-gradient(180deg,hsl(var(--muted)) 0%,hsl(var(--background)) 100%)}
+.grid-3{display:grid;gap:1.5rem;grid-template-columns:1fr}
+@media(min-width:768px){.grid-3{grid-template-columns:repeat(3,1fr);gap:2rem}}
+.card{
+  background:hsl(var(--card));border:1px solid hsl(var(--border));
+  border-radius:.5rem;padding:2rem;box-shadow:var(--shadow-soft);
+  transition:box-shadow .3s;
+}
+.card:hover{box-shadow:var(--shadow-elegant)}
+.card .num{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:hsl(var(--gold));margin-bottom:1rem}
+.card h3{font-size:1.25rem;margin-bottom:.75rem;color:hsl(var(--foreground))}
+.card p{font-size:.9rem;color:hsl(var(--muted-foreground))}
+
+/* Áreas */
+.areas-grid{
+  display:grid;grid-template-columns:1fr;gap:1px;background:hsl(var(--border));
+  border:1px solid hsl(var(--border));border-radius:.5rem;overflow:hidden;
+}
+@media(min-width:768px){.areas-grid{grid-template-columns:1fr 1fr}}
+.area{background:hsl(var(--background));padding:2rem}
+@media(min-width:768px){.area{padding:2.5rem}}
+.area h3{font-size:1.4rem;margin-bottom:1.25rem;color:hsl(var(--foreground));position:relative;padding-bottom:.6rem}
+.area h3::after{content:"";position:absolute;left:0;bottom:0;width:36px;height:1px;background:hsl(var(--gold))}
+.area p{color:hsl(var(--muted-foreground));font-size:.95rem}
+
+/* Atención */
+#atencion{background:hsl(var(--muted)/.5);text-align:center}
+#atencion .container{max-width:720px}
+#atencion h2{margin-bottom:1.25rem}
+#atencion p{color:hsl(var(--muted-foreground));font-size:1.05rem;margin-bottom:2rem}
+
+/* Contacto */
+#contacto .container{max-width:960px}
+.contact-cards{display:grid;grid-template-columns:1fr;gap:1rem;margin-bottom:2.5rem}
+@media(min-width:768px){.contact-cards{grid-template-columns:repeat(3,1fr);gap:1.5rem}}
+.contact-card{
+  background:hsl(var(--card));border:1px solid hsl(var(--border));
+  border-radius:.5rem;padding:1.5rem;text-align:center;
+}
+.contact-card .label{
+  text-transform:uppercase;letter-spacing:.2em;font-size:.65rem;
+  color:hsl(var(--gold));margin-bottom:.5rem;
+}
+.contact-card .value{font-size:.92rem;color:hsl(var(--foreground))}
+.contact-cta{text-align:center}
+
+/* Footer */
+footer{
+  border-top:1px solid hsl(var(--border));padding:2.5rem 0;background:hsl(var(--background));
+}
+footer .container{
+  display:flex;flex-direction:column;align-items:center;gap:.75rem;text-align:center;
+}
+@media(min-width:768px){footer .container{flex-direction:row;justify-content:space-between;text-align:left}}
+footer .copy{font-size:.78rem;color:hsl(var(--muted-foreground))}
+
+/* WhatsApp floating */
+.wa-float{
+  position:fixed;bottom:1.25rem;right:1.25rem;z-index:50;
+  width:3.5rem;height:3.5rem;border-radius:50%;
+  background:#25D366;color:#fff;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:var(--shadow-elegant);transition:transform .2s;
+}
+.wa-float:hover{transform:scale(1.06)}
+.wa-float svg{width:1.75rem;height:1.75rem;fill:currentColor}
+@media(min-width:768px){.wa-float{bottom:1.75rem;right:1.75rem}}
+
+/* Animations */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+.fade-up{animation:fadeUp .8s ease-out both}
+</style>
+</head>
+<body>
+
+<header id="site-header">
+  <div class="container nav">
+    <a href="#top" class="brand">Estudio Jurídico <span class="gold">Integral C&amp;C</span></a>
+    <nav class="nav-links">
+      <a href="#nosotros">Quiénes somos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#areas">Áreas</a>
+      <a href="#atencion">Atención</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto" class="btn btn-outline btn-sm">Solicitar cita</a>
+    </nav>
+    <button class="menu-btn" aria-label="Abrir menú" id="menu-btn">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="container">
+      <a href="#nosotros">Quiénes somos</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#areas">Áreas</a>
+      <a href="#atencion">Atención</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto" class="btn btn-primary btn-sm" style="margin-top:.5rem">Solicitar cita</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section id="top" class="hero">
+  <div class="container fade-up">
+    <p class="eyebrow">Asesoramiento Jurídico</p>
+    <h1>Estudio Jurídico Integral <span class="gold">C&amp;C</span></h1>
+    <p class="lead">Asesoramiento legal con experiencia, compromiso y una mirada actual del derecho.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://wa.me/5491135996649?text=Hola%2C%20quisiera%20realizar%20una%20consulta" target="_blank" rel="noopener noreferrer">Consultanos por WhatsApp
+      </a>
+            <a class="btn btn-outline" href="#contacto">Solicitar cita</a>
+    </div>
+  </div>
+</section>
+
+<section id="nosotros">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Quiénes somos</p>
+      <h2 class="gold-line gold-line-center">Más de 20 años acompañando a nuestros clientes</h2>
+    </div>
+    <div class="body">
+      <p>Somos un estudio jurídico integral formado por profesionales con más de 20 años de experiencia. La actualidad, constante formación y responsabilidad nos destacan.</p>
+      <p>Resolvemos dudas y acompañamos a la resolución de conflictos de manera eficaz y comprometida con los intereses de nuestros clientes. Nuestros servicios están destinados a toda la comunidad, acompañando en cada caso particular y entendiendo los tiempos y situaciones económicas de cada cliente.</p>
+      <p>Todos merecen la defensa de sus derechos y nosotros nos encargamos con gran entusiasmo de hacerlo. Nuestras profesionales se desarrollan en las áreas previsionales, civiles, comerciales, familiares, sucesiones, entre otras.</p>
+      <p>Nos distingue la honestidad y la explicación clara y concisa de las herramientas para la resolución de tus conflictos, porque todos debemos conocer el derecho que ostentamos y debemos defender. Con una mirada actual del derecho y de la situación real del país, acompañamos a fin de lograr lo mejor en tu situación.</p>
+    </div>
+  </div>
+</section>
+
+<section id="servicios">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Nuestros servicios</p>
+      <h2>Compromiso, claridad y experiencia</h2>
+    </div>
+    <div class="grid-3">
+      <div class="card"><div class="num">01</div><h3>Escucha y diagnóstico</h3><p>Analizamos tu caso con detenimiento para ofrecerte una respuesta clara y honesta.</p></div>
+      <div class="card"><div class="num">02</div><h3>Estrategia personalizada</h3><p>Diseñamos un camino legal a la medida de tu situación y posibilidades económicas.</p></div>
+      <div class="card"><div class="num">03</div><h3>Acompañamiento integral</h3><p>Te explicamos cada paso con un lenguaje cercano y comprensible, sin tecnicismos innecesarios.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="areas">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Especialidades</p>
+      <h2>Áreas de práctica</h2>
+    </div>
+    <div class="areas-grid">
+      <article class="area">
+        <h3>Derecho Previsional</h3>
+        <p>En el sector previsional del estudio podrás consultar sobre jubilaciones, pensiones, reajustes, entre otros.</p>
+      </article>
+      <article class="area">
+        <h3>Derecho Civil / Comercial</h3>
+        <p>Te acompañamos en los reclamos que desees iniciar y no sabés por dónde arrancar: daños y perjuicios, accidentes de tránsito, reclamos a consorcio de propietarios, redacción de cartas documento, contratos, sucesiones, entre otros.</p>
+      </article>
+      <article class="area">
+        <h3>Derecho de Familia</h3>
+        <p>Con profesionales dedicados y con vocación, acompañamos a las familias en procesos por alimentos, cuidado personal, régimen de comunicación, violencia familiar, autorizaciones de viaje, divorcios, liquidación de la sociedad conyugal, entre otros.</p>
+      </article>
+      <article class="area">
+        <h3>Derecho Laboral</h3>
+        <p>Contamos con profesionales académicos que te acompañarán de la mejor manera en cada etapa de tu reclamo.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="atencion">
+  <div class="container">
+    <p class="eyebrow">Modalidad de atención</p>
+    <h2>Citas presenciales o virtuales</h2>
+    <p>Ofrecemos citas presenciales o virtuales de acuerdo a tu elección y comodidad.</p>
+    <a class="btn btn-primary" href="https://wa.me/5491135996649?text=Hola%2C%20quisiera%20realizar%20una%20consulta" target="_blank" rel="noopener noreferrer">Coordinar mi consulta</a>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">Contacto</p>
+      <h2>Estamos para escucharte</h2>
+      <p style="margin-top:1rem;color:hsl(var(--muted-foreground));max-width:520px;margin-left:auto;margin-right:auto">Contanos brevemente tu situación y te responderemos a la brevedad.</p>
+    </div>
+    <div class="contact-cards">
+      <div class="contact-card"><p class="label">Teléfonos</p><p class="value">1535996646/1561882895</p></div>
+      <div class="contact-card"><p class="label">Email</p><p class="value">drascampos.estudiojuridico@gmail.com</p></div>
+      <div class="contact-card"><p class="label">Dirección</p><p class="value">CABA & Provincia de Bs. As.</p></div>
+    </div>
+    <div class="contact-cta">
+      <a class="btn btn-wa" href="https://wa.me/5491135996649?text=Hola%2C%20quisiera%20realizar%20una%20consulta." target="_blank" rel="noopener">Escribinos por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">
+    <p class="serif">Estudio Jurídico <span class="gold">Integral C&amp;C</span></p>
+    <p class="copy">© <span id="year"></span> — Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/5491135996649?text=Hola%2C%20quisiera%20realizar%20una%20consulta." target="_blank" rel="noopener" aria-label="Consultar por WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M19.11 17.21c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51l-.57-.01c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35zM16.02 5.33c-5.88 0-10.66 4.78-10.66 10.66 0 1.88.49 3.71 1.42 5.32L5.34 26.67l5.5-1.43a10.6 10.6 0 0 0 5.18 1.32h.01c5.88 0 10.66-4.78 10.66-10.66s-4.78-10.57-10.67-10.57zm0 19.5h-.01a8.85 8.85 0 0 1-4.51-1.23l-.32-.19-3.27.85.87-3.18-.21-.33a8.83 8.83 0 0 1-1.36-4.74c0-4.89 3.99-8.87 8.88-8.87 2.37 0 4.6.92 6.27 2.6a8.81 8.81 0 0 1 2.6 6.28c0 4.88-3.99 8.81-8.94 8.81z"/></svg>
+</a>
+
+<script>
+  // Header scroll effect
+  const header = document.getElementById('site-header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 8);
+  onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+  // Mobile menu
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn.addEventListener('click', () => menu.classList.toggle('open'));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+
+  // Year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
